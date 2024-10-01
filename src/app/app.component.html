@@ -2,21 +2,55 @@
 <main class="main">
   <div class="content">
     <div class="left-side">
-      <div class="left-up-side">
+      <h2>Document links</h2>
+      <div class="pill-group">
+        @for (item of [
+          { title: [resume_link_text], link: [resume_link], details: [resume_details] },
+          { title: [thesis_link_text], link:[thesis_link], details: [thesis_details] },
+          { title: [article_link_text], link: [article_link], details: [article_descirption] },
+          { title: [md_thessis_link_text], link: [md_thessis_link], details: [md_thessis_descirption]},
+          { title: [md_publishment_link_text], link: [md_publishment_link], details: [md_publishment_descirption]}
+        ]; track item.title) {
+          <a
+            class="pill"
+            [href]="item.link"
+            target="_blank"
+            rel="noopener"
+            [matTooltip]="item.details[0]"
+          >
+            <span>{{ item.title }}</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="14"
+              viewBox="0 -960 900 900"
+              width="14"
+              fill="currentColor"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+              />
+            </svg>
+          </a>
+        }
+      </div>
+     
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="mid-side">
+      <div class="mid-up-side">
         <div>
           
-            <img class="myFamily" src="img/me_family.png"> 
-            <h1>Hello, dear visitor!</h1>  
+            <img class="myFamily_picture" src="img/me_family.png"> 
+            <h1>{{salut}}</h1>  
         </div>
-        <p>Wellcome to my page.</p>
-        <p>I am Serdar Selcuk, working as a developer in Chase...
-          I created this page to demonstrate my development skils. You can find some small evidences about 
-          developing on Angular, Android, SpringBoot development and als osome other project with Selenium, Appium, RestAssured etc...
-          You are viewing the page constructed by me using Angular framework.
+        <p>
+          {{definition}}
         </p>
-        <p>Click links to know more about me...</p>
+        <p>
+          {{ending}}  
+        </p>
       </div>
-      <div class="left-down-side">
+      <div class="mid-down-side">
         <div class="social-links">
           <div class="link_icons">
             <div class="gitHub_group icon_group">
@@ -97,18 +131,19 @@
       <h2>My Projects</h2>
       <div class="pill-group">
         @for (item of [
-          { title: 'Android app - Math mind', link: 'https://github.com/serdarselcuk/mathMind_android' },
-          { title: 'SpringBoot - MathMind services', link: 'https://github.com/serdarselcuk/mathMind_service' },
-          { title: 'Selenium/RestAssured Project', link: 'https://github.com/serdarselcuk/MyProjecOfUI/tree/master' },
-          { title: 'Appium Project - Etsy test', link: 'https://github.com/serdarselcuk/EtsyTest_Apium'},
-          { title: 'JS Project - Ball game', link: 'https://serdarselcuk.github.io/ballGame/' },
-          { title: 'Java Project - Excel manuplator', link: 'https://github.com/serdarselcuk/excelManuplator'},
+          { title: [android_title], link: [android_link], description:[android_description] },
+          { title: [springBoot_title], link: [springBoot_link], description:[springBoot_description] },
+          { title: [selenium_title], link:[selenium_link], description:[selenium_description] },
+          { title: [appium_title], link:[appium_link], description:[appium_description] },
+          { title: [jsPro_title] , link: [jsPro_link], description:[jsPro_description] },
+          { title: [javaPro_title], link:[javaPro_link], description:[javaPro_description] },
         ]; track item.title) {
           <a
             class="pill"
             [href]="item.link"
             target="_blank"
             rel="noopener"
+            [matTooltip]="item.description[0]"
           >
             <span>{{ item.title }}</span>
             <svg
