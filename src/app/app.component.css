@@ -58,10 +58,6 @@ main {
   position: relative;
 }
 
-.angular-logo {
-  max-width: 9.2rem;
-}
-
 .content {
   display: flex;
   justify-content: space-around;
@@ -84,10 +80,11 @@ main {
   margin-inline: 0.5rem;
 }
 
-.myFamily {
+.myFamily_picture {
   align-self: center;
   height: auto;
-  width: 75%;
+  width: 100%;
+
 }
 
 .pill-group {
@@ -101,7 +98,7 @@ main {
 .pill {
   display: flex;
   align-items: center;
-  --pill-accent: var(--bright-blue);
+  /* --pill-accent: var(--bright-blue); */
   background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
   color: var(--pill-accent);
   padding-inline: 0.75rem;
@@ -127,13 +124,23 @@ main {
 }
 
 .pill-group .pill:nth-child(6n + 2) {
+  --pill-accent: var(--electric-violet);
+}
+
+.pill-group .pill:nth-child(6n + 3){
   --pill-accent: var(--french-violet);
 }
 
-.pill-group .pill:nth-child(6n + 3),
-.pill-group .pill:nth-child(6n + 4),
+.pill-group .pill:nth-child(6n + 4){
+  --pill-accent: var(--vivid-pink);
+}
+
 .pill-group .pill:nth-child(6n + 5) {
   --pill-accent: var(--hot-red);
+}
+
+.pill-group .pill:nth-child(6n + 6) {
+  --pill-accent: var(--orange-red);
 }
 
 .pill-group svg {
@@ -144,6 +151,12 @@ main {
   display: flex;
   align-items: 'first baseline';
   flex-direction: row;
+}
+
+.mat-mdc-tooltip-surface{
+  background-color: #fa0808; /* Example: Dark background */
+  color: rgb(163, 193, 67);
+  font-size: 14px;
 }
 
 .link_icon {
@@ -183,6 +196,12 @@ main {
 
 #hackerRankIcon:hover~#onhoverHackerRank {
   visibility: visible;
+}
+
+.mat-tooltip {
+  background-color: #333; /* Example: Dark background */
+  color: white;
+  font-size: 14px;
 }
 
 .social-links {
