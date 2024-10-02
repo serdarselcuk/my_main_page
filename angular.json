@@ -46,7 +46,7 @@
                 }
               ],
               "outputHashing": "all",
-              "outputPath": "docs",
+              "outputPath": "dist/my_main_page",
               "baseHref": "/my_main_page/"
             },
             "development": {
@@ -94,8 +94,11 @@
             "scripts": []
           }
         },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+       "deploy": {
+        "builder": "angular-cli-ghpages:deploy",
+        "options": {
+          "baseHref": "/my_main_page/", 
+          "deployToBranch": "gh-pages"
         }
       }
     }
