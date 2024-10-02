@@ -94,13 +94,14 @@
             "scripts": []
           }
         },
-       "deploy": {
-        "builder": "angular-cli-ghpages:deploy",
-        "options": {
-          "baseHref": "/my_main_page/", 
-          "deployToBranch": "gh-pages"
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/my_main_page/", 
+            "deployToBranch": "gh-pages",
+            "outputPath": "docs/browser" 
+          }
         }
-      }
     }
   }
 }
