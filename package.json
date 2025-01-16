@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:my_main_page": "node dist/my_main_page/server/server.mjs"
+    "serve:ssr:my_main_page": "node dist/my_main_page/server/server.mjs",
+    "deploy:gh": "gh-pages -d docs/browser -b gh-pages" 
   },
   "private": true,
   "dependencies": {
@@ -36,6 +37,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.19.53",
     "angular-cli-ghpages": "^2.0.1",
+    "gh-pages": "^6.1.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
