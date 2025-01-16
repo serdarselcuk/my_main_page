@@ -17,7 +17,7 @@ export class AppComponent {
   definition = "I'm Serdar Selcuk, a developer at Chase. This page showcases my development skills, including Angular, Android, SpringBoot, Selenium, Appium, RestAssured, and more."
   ending = "Explore the links to learn more about my projects and experience."
   resume_link_text='my CV'
-  resume_link='https://drive.google.com/file/d/1--FCp0Ac_j8OOwlpz8GUCzB8GgbA0Osc/view?usp=sharing'
+  resume_link='https://drive.google.com/file/d/1617h1c0sJzNXx8rUkqGDtQskNYZKiR7C/view?usp=drive_link'
   resume_details='click to see my resume'
   thesis_link_text= "Thesis"
   thesis_link= 'https://drive.google.com/file/d/11NL9CuHI-ckhimugcYjOqbl37yo5MwwN/view?usp=sharing'
