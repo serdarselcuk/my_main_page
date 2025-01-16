@@ -12,5 +12,4 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
- ng build --base-href=/my_main_page/ --configuration production --output-path=docs/browser
 npm run deploy:gh
