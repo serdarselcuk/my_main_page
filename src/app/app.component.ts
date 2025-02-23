@@ -14,10 +14,10 @@ export class AppComponent {
 
   title = 'My Page';
   salut = "Hello, dear visitor!"
-  definition = "I'm Serdar Selcuk, a developer at Chase. This page showcases my development skills, including Angular, Android, SpringBoot, Selenium, Appium, RestAssured, and more."
+  definition = "I'm a Software Developer with 5 years of experience building automation frameworks using Selenium, Appium, Espresso, and JDBC to test mobile, web, API, and database applications. I've had the opportunity to work across the entire automation landscape, thanks to my managers recognizing my eagerness to learn and tackle new challenges.  In addition to automation, I've also developed Android applications, including adding new features and fixing defects."
   ending = "Explore the links to learn more about my projects and experience."
   resume_link_text='my CV'
-  resume_link='https://drive.google.com/file/d/1617h1c0sJzNXx8rUkqGDtQskNYZKiR7C/view?usp=drive_link'
+  resume_link='https://drive.google.com/file/d/1i1LAIuxRN7Pmbi-vUmTKNJRn0SxJq5w9/view?usp=sharing'
   resume_details='click to see my resume'
   thesis_link_text= "Thesis"
   thesis_link= 'https://drive.google.com/file/d/11NL9CuHI-ckhimugcYjOqbl37yo5MwwN/view?usp=sharing'
